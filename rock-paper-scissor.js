@@ -23,6 +23,7 @@ function decisionMaker(playerSelection, computerSelection){
     if(playerSelection == computerSelection)
     {
         prompt = "It's a tie!";
+        winner = "none";
     }
     else if(playerSelection == "paper")
     {
@@ -71,11 +72,13 @@ function game()
 
     for(let i = 0; i < 5; i++)
     {
-        roundWinner = decisionMaker("rock",computerPlay());
+        let playerChoice = prompt("So, what do you choose?","Rock, Paper or Scissors?")
+        roundWinner = decisionMaker(playerChoice.toLowerCase(),computerPlay());
         if(roundWinner == "computer")
             computer++;
         else if(roundWinner == "player")
             player++;
+
 
     }
     console.log("All 5 round scores:\nComputer: "+computer+"\tPlayer: "+player);
