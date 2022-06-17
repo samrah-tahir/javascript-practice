@@ -27,16 +27,19 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     flex: 1;
+
 }
 
-.opt-btn{
+.opt-btn, .display{
     display: flex;
     justify-content: space-around;
     background-color: #F2D1D1;
     padding: 20px 10px;
     width: 50%;
     max-width: 30rem;
+    min-width: 246px;
     border-radius: 10px;
 }
 
@@ -46,4 +49,25 @@ header{
     padding: 5px 20px; 
     background-color: #F9F9F9;
     font-size: 2rem;
+}
+
+.display{
+    background-color: whitesmoke;
+    margin-top: 2rem;
+    font-size: 1.5rem;
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+i.playerFist, i.compFist{
+    display: none;
+}
+
+i.playerPaper, i.compPaper{
+    display: none;
+}
+
+i.playerScissor, i.compScissor{
+    display: none;
 }
