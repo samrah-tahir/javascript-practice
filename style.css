@@ -1,0 +1,49 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #CDF0EA;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+header{
+    display: flex;
+    justify-content: center;
+}
+
+.gameName{
+    font-size: 2rem;
+    padding: 10px 0px;
+    color: #4B5D67;
+    font-weight: bold;
+}
+.buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+}
+
+.opt-btn{
+    display: flex;
+    justify-content: space-around;
+    background-color: #F2D1D1;
+    padding: 20px 10px;
+    width: 50%;
+    max-width: 30rem;
+    border-radius: 10px;
+}
+
+.opt-btn > button {
+    border: none;
+    border-radius: 5px;
+    padding: 5px 20px; 
+    background-color: #F9F9F9;
+    font-size: 2rem;
+}

@@ -63,6 +63,20 @@ function decisionMaker(playerSelection, computerSelection){
     return winner;
 }
 
+function playRound(playerChoice, computer){
+    let roundWinner;
+    let compScore = 0;
+    let playerScore = 0;
+
+    // console.log("hello");
+    roundWinner = decisionMaker(playerChoice.toLowerCase(),computer);
+    // console.log(roundWinner);
+    if(roundWinner == "computer")
+        compScore++;
+    else if(roundWinner == "player")
+        playerScore++;
+
+}
 
 function game()
 {
@@ -70,17 +84,16 @@ function game()
     let player = 0;
     let roundWinner;
 
-    for(let i = 0; i < 5; i++)
-    {
-        let playerChoice = prompt("So, what do you choose?","Rock, Paper or Scissors?")
-        roundWinner = decisionMaker(playerChoice.toLowerCase(),computerPlay());
-        if(roundWinner == "computer")
-            computer++;
-        else if(roundWinner == "player")
-            player++;
 
+    let choices = document.querySelectorAll(".btn");
+    // console.log(choices[0]);
+    choices.forEach( (choice) => {
+            choice.addEventListener("click", function(e) {
+                playRound(choice.name, computerPlay());
+            });
+    });
 
-    }
+    
     console.log("All 5 round scores:\nComputer: "+computer+"\tPlayer: "+player);
 }
 
