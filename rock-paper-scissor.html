@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Rock, Paper & Scissors Game!</title>
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     <script src="./rock-paper-scissor.js" defer>
@@ -21,16 +21,22 @@
         <button name="scissors" class="scissors btn"><i class="fa-solid fa-hand-scissors"></i></button>
        </div> 
        <div class="display">
-        <div class="player">
-            <i class="fa-solid fa-hand-back-fist playerFist"></i>
-            <i class="fa-solid fa-hand playerPaper"></i>
-            <i class="fa-solid fa-hand-scissors playerScissor"></i>
+        <div>
+            <div class="player">
+                <i class="fa-solid fa-hand-back-fist playerFist"></i>
+                <i class="fa-solid fa-hand playerPaper"></i>
+                <i class="fa-solid fa-hand-scissors playerScissor"></i>
+            </div>
+            <div style="font-size: 1rem;">player</div>
         </div>
-        <div class="result"></div>
-        <div class="computer">
-            <i class="fa-solid fa-hand-back-fist compFist"></i>
-            <i class="fa-solid fa-hand compPaper"></i>
-            <i class="fa-solid fa-hand-scissors compScissor"></i>
+        <div style="display: flex; align-items: center;" class="result"></div>
+        <div>
+            <div class="computer">
+                <i class="fa-solid fa-hand-back-fist compFist"></i>
+                <i class="fa-solid fa-hand compPaper"></i>
+                <i class="fa-solid fa-hand-scissors compScissor"></i>
+            </div>
+            <div style="font-size: 1rem;">computer</div>
         </div>
     </div>
    </div>
